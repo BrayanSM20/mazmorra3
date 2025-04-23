@@ -1,44 +1,46 @@
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── modelo/
-│   │   │   │   ├── Escenario.java
-│   │   │   │   ├── Celda.java
-│   │   │   │   ├── personajes/
-│   │   │   │   │   ├── Personaje.java
-│   │   │   │   │   ├── Protagonista.java
-│   │   │   │   │   ├── Enemigo.java
-│   │   │   │   ├── combate/
-│   │   │   │   │   ├── SistemaCombate.java
-│   │   │   │   ├── gestionTurnos/
-│   │   │   │   │   ├── GestorTurnos.java
-│   │   │   │   ├── observadores/
-│   │   │   │   │   ├── Observable.java
-│   │   │   │   │   ├── Observador.java
-│   │   │   │   |
-│   │   │   ├── controlador/
-│   │   │   │   ├── ControladorJuego.java
-│   │   │   │   ├── ControladorCreacionPersonaje.java
-│   │   │   │   ├── GestorArchivos.java
-│   │   │   │   |
-│   │   │   ├── vista/
-│   │   │   │   ├── VistaJuego.java
-│   │   │   │   ├── VistaCreacionPersonaje.java
-│   │   │   │   |
-│   │   │   ├── Main.java
-│   │   ├── resources/
-│   │   │   ├── vistas/
-│   │   │   │   ├── juego.fxml
-│   │   │   │   ├── creacionPersonaje.fxml
-│   │   │   ├── estilos/
-│   │   │   │   ├── estilos.css
-│   │   │   ├── imagenes/
-│   │   │   │   ├── suelo.png
-│   │   │   │   ├── pared.png
-│   │   │   │   ├── protagonista.png
-│   │   │   │   ├── enemigo.png
-│   │   │   ├── datos/
-│   │   │   │   ├── escenario.txt
-│   │   │   │   ├── enemigos.txt
-│   │   │   │   ├── personajes.txt
-|_
+src/
+└── main/
+    ├── java/
+    │   └── programacion/
+    |       |
+    │       ├── App.java                      # Clase principal de la aplicación
+    │       ├── PrimaryController.java        # Controlador de la pantalla principal
+    │       ├── SecondaryController.java      # Controlador de la pantalla secundaria
+    |       |
+    │       ├── modelo/
+    |       |   |
+    │       │   ├── Escenario.java            # Representa el tablero de juego
+    │       │   ├── Celda.java                # Representa cada casilla del tablero
+    │       │   ├── TipoCelda.java            # Enum con los tipos de celda (SUELO, PARED)
+    |       |   |
+    │       │   ├── personajes/
+    │       │   │   ├── Personaje.java        # Clase abstracta para todos los personajes
+    │       │   │   ├── Protagonista.java     # Personaje controlado por el jugador
+    │       │   │   └── Enemigo.java          # Personajes enemigos 
+    |       |   |
+    │       │   ├── combate/
+    │       │   │   └── SistemaCombate.java   # Gestiona la lógica de combate
+    |       |   |
+    │       │   ├── gestionTurnos/
+    │       │   │   └── GestorTurnos.java     # Controla el orden de los turnos
+    |       |   |
+    │       │   └── observadores/
+    │       │       ├── Observable.java       # Interfaz para objetos observables
+    │       │       └── Observador.java       # Interfaz para observadores
+    |       |
+    │       ├── utilidades/
+    │       │   └── GestorArchivos.java       # Carga escenarios y enemigos desde archivos
+    ├── resources/
+    │   └── programacion/
+    │       ├── primary.fxml                  # Vista FXML principal (pantalla de juego)
+    │       ├── secondary.fxml                # Vista FXML secundaria (creación de personaje)
+    │       ├── estilos/
+    │       │   └── estilos.css               # Estilos CSS para las vistas
+    │       ├── imagenes/
+    │       │   ├── suelo.png                 # Imagen para las casillas de suelo
+    │       │   ├── pared.png                 # Imagen para las casillas de pared
+    │       │   ├── protagonista.png          # Imagen para el protagonista
+    │       │   └── enemigo.png               # Imagen para los enemigos
+    │       └── datos/
+    │           ├── escenario.txt             # Archivo con la configuración del escenario
+    │           └── enemigos.txt              # Archivo con la información de los enemigos
