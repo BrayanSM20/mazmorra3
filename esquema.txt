@@ -44,4 +44,3 @@ src/
     │       └── datos/
     │           ├── escenario.txt             # Archivo con la configuración del escenario
     │           └── enemigos.txt              # Archivo con la información de los enemigos
-    hola
