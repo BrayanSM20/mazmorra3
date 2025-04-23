@@ -1,0 +1,44 @@
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── modelo/
+│   │   │   │   ├── Escenario.java
+│   │   │   │   ├── Celda.java
+│   │   │   │   ├── personajes/
+│   │   │   │   │   ├── Personaje.java
+│   │   │   │   │   ├── Protagonista.java
+│   │   │   │   │   ├── Enemigo.java
+│   │   │   │   ├── combate/
+│   │   │   │   │   ├── SistemaCombate.java
+│   │   │   │   ├── gestionTurnos/
+│   │   │   │   │   ├── GestorTurnos.java
+│   │   │   │   ├── observadores/
+│   │   │   │   │   ├── Observable.java
+│   │   │   │   │   ├── Observador.java
+│   │   │   │   |
+│   │   │   ├── controlador/
+│   │   │   │   ├── ControladorJuego.java
+│   │   │   │   ├── ControladorCreacionPersonaje.java
+│   │   │   │   ├── GestorArchivos.java
+│   │   │   │   |
+│   │   │   ├── vista/
+│   │   │   │   ├── VistaJuego.java
+│   │   │   │   ├── VistaCreacionPersonaje.java
+│   │   │   │   |
+│   │   │   ├── Main.java
+│   │   ├── resources/
+│   │   │   ├── vistas/
+│   │   │   │   ├── juego.fxml
+│   │   │   │   ├── creacionPersonaje.fxml
+│   │   │   ├── estilos/
+│   │   │   │   ├── estilos.css
+│   │   │   ├── imagenes/
+│   │   │   │   ├── suelo.png
+│   │   │   │   ├── pared.png
+│   │   │   │   ├── protagonista.png
+│   │   │   │   ├── enemigo.png
+│   │   │   ├── datos/
+│   │   │   │   ├── escenario.txt
+│   │   │   │   ├── enemigos.txt
+│   │   │   │   ├── personajes.txt
+|_
